@@ -1,0 +1,17 @@
+{
+    "name": "offline/postfinance",
+    "description": "Helper class to work with the PostFinance e-payment system",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Kündig",
+            "email": "tobias.kuendig@offlinegmbh.ch"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Offline\\": "src/Offline/"
+        }
+    }
+}
