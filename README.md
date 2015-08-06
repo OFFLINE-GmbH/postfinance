@@ -9,6 +9,8 @@ The implementation follows the [official documentation](https://e-payment.postfi
 
 ## Use it
 
+See `index.php` for an example.
+
 Define your parameters as an array. Get your SHA-IN signature at hand. Initialize a class instance and pass your parameter array to `setParamList`.
 
 ```php

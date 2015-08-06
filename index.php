@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-$shaInSignature = 'Configuration -> Technical information -> Data and origni verification -> SHA-IN pass phrase';
+$shaInSignature = 'Configuration -> Technical information -> Data and origin verification -> SHA-IN pass phrase';
 $params = [
     'PSPID'        => 'your-postfinance-username',
     'ORDERID'      => '1234',
