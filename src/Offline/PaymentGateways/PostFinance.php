@@ -27,9 +27,9 @@ class PostFinance
      *
      * @throws InvalidArgumentException
      */
-    public function __construct($shaSig, $algorithm = MHASH_SHA1)
+    public function __construct($shaSig, $algorithm = 'sha1')
     {
-        if ( ! in_array($algorithm, [MHASH_SHA1, MHASH_SHA256, MHASH_SHA512])) {
+        if ( ! in_array($algorithm, ['sha1', 'sha256', 'sha512'])) {
             throw new InvalidArgumentException('Invalid Algorithm specified!');
         }
 
@@ -129,7 +129,7 @@ class PostFinance
      */
     protected function generateDigest($hashString)
     {
-        return strtoupper(bin2hex(mhash($this->algorithm, $hashString)));
+        return hash($this->algorithm, $hashString);
     }
 
     /**

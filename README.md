@@ -43,8 +43,8 @@ In your view file call `getFormFields` wherever you want to output the hidden in
 To use SHA256 or SHA512 algorithms, simply pass the php MHASH constant as second parameter:
 
 ```php
-$postfinance256 = new Offline\PaymentGateways\PostFinance($shaInSignature, MHASH_SHA256);
-$postfinance512 = new Offline\PaymentGateways\PostFinance($shaInSignature, MHASH_SHA512);
+$postfinance256 = new Offline\PaymentGateways\PostFinance($shaInSignature, 'sha256');
+$postfinance512 = new Offline\PaymentGateways\PostFinance($shaInSignature, 'sha512');
 ```
 
 ### Validating SHA-OUT signatures   
