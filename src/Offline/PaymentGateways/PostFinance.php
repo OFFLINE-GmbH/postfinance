@@ -127,7 +127,7 @@ class PostFinance
      */
     protected function generateDigest($hashString)
     {
-        return hash($this->algorithm, $hashString);
+        return strtoupper(hash($this->algorithm, $hashString));
     }
 
     /**
