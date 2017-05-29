@@ -6,7 +6,6 @@
  */
 class PostFinance
 {
-
     /**
      * @var array
      */
@@ -16,10 +15,9 @@ class PostFinance
      */
     protected $algorithm;
     /**
-     * @var
+     * @var string
      */
     protected $shaSig;
-
 
     /**
      * @param string $shaSig
@@ -30,7 +28,7 @@ class PostFinance
     public function __construct($shaSig, $algorithm = 'sha1')
     {
         if ( ! in_array($algorithm, ['sha1', 'sha256', 'sha512'])) {
-            throw new InvalidArgumentException('Invalid Algorithm specified!');
+            throw new InvalidArgumentException('Invalid algorithm specified!');
         }
 
         $this->shaSig    = $shaSig;
@@ -172,5 +170,4 @@ class PostFinance
 
         return $value;
     }
-
 }
